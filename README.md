@@ -23,8 +23,8 @@
 
     cat.__proto__ = animal;
 
-    console.log(cat.sleep());
-    console.log(cat.walk());
+    cat.sleep();
+    cat.walk();
 
     // Sleep
     // Walk
@@ -56,7 +56,7 @@
         return "Own Walk";
     }
 
-    console.log(cat.walk());
+    cat.walk();
 
     // Own Walk
 ```
@@ -79,8 +79,8 @@
     cat.__proto__ = animal;
     cat.sleep();
 
-    console.log(cat.isSleeping);
-    console.log(animal.isSleeping);
+    cat.isSleeping;
+    animal.isSleeping;
 
     // true
     // undefined
@@ -102,7 +102,7 @@
     cat.__proto__ = animal;
 
     for(let prop in cat) {
-        console.log(prop);
+        return prop;
     }; 
 
     // sleep
